@@ -23,12 +23,12 @@ export function MainNav() {
             <ul className="space-y-1 py-2 px-2">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link
-                    to="/start"
-                    className="flex w-full items-center gap-2 rounded-lg py-2 text-sm font-medium text-stone-700 dark:text-stone-100 dark:hover:bg-stone-700 transition-all duration-100"
-                  >
-                    🏁 Getting Started
-                  </Link>
+                  <Link to="/start">🏁 Getting Started</Link>
+                </NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link to="/fish-pond">🐟 Fish Pond</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
