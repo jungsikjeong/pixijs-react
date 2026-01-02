@@ -1,9 +1,10 @@
 import { Application, extend, useTick } from "@pixi/react";
-import { Assets, Container, Sprite, Texture } from "pixi.js";
+import { Assets, Container, Sprite, Texture, Text } from "pixi.js";
 import { useState, useEffect } from "react";
 extend({
   Container,
   Sprite,
+  Text,
 });
 
 export default function Start() {
@@ -60,12 +61,21 @@ function Bunny({
   });
 
   return (
-    <pixiSprite
-      texture={bunny}
-      x={dimensions.width / 2}
-      y={dimensions.height / 2}
-      anchor={{ x: 0.5, y: 0.5 }}
-      rotation={rotation}
-    />
+    <>
+      <pixiText
+        text="으아아"
+        x={dimensions.width / 2}
+        y={dimensions.height / 2}
+        anchor={{ x: 0.5, y: 2 }}
+        rotation={rotation}
+      />
+      <pixiSprite
+        texture={bunny}
+        x={dimensions.width / 2}
+        y={dimensions.height / 2}
+        anchor={{ x: 0.5, y: 0.5 }}
+        rotation={rotation}
+      />
+    </>
   );
 }

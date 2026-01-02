@@ -1,4 +1,4 @@
-import { MainNav } from "./components/layout/main-nav";
+import { MainNav } from "./components/layout/nav";
 import { Link } from "react-router";
 import { Button } from "./components/ui/button";
 
